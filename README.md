@@ -2,16 +2,32 @@
 Command line tool using python to convert a csv file to TeX table (tabular environment). Reads and writes to files or stdin/stdout. The examples show some reasonable ways to get tables that look relatively well. You could also call the script directly from your text editor (as a "plugin") to easily insert a table.
 Examples:
 
+## csvtest.csv
+
+    $ python csvtextab.py csvtest2.csv -V 5pt -Llt -a "cc||cc" | pdflatex
+	
+![Example with csv containing numbers](csvtest.png)
+
+	name, animal, age
+
+	Bertha, cow, 3
+	Jane, crocodile, 5
+	Hans, horse, 7
+	Wuffi, dog, 10
+	Patricia, mouse, 1
+
+## csvtest2.csv
     $ python csvtextab.py csvtest.csv -V 4pt -Ll | pdflatex
+
 
 
 ![Example with csv containing text](csvtest2.png)
 
+	U [kV], $\lambda_{min}$ [pm], $eU_{AS}$ [keV], $\frac{c}{\lambda_{min}}$ [$\frac{10^{18}}{\mathrm{s}}$]
+	35, 33.14, 49.50, 9.05
+	30, 37.91, 42.43, 7.91
+	25, 45.18, 35.36, 6.64
 
-    $ python csvtextab.py csvtest2.csv -V 5pt -Llt -a "cc||cc" | pdflatex
-
-
-![Example with csv containing numbers](csvtest.png)
 
 # Command Line Arguments
 
