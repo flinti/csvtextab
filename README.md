@@ -4,7 +4,7 @@ Examples:
 
 ## csvtest.csv
 
-    $ python csvtextab.py csvtest2.csv -V 5pt -Llt -a "cc||cc" | pdflatex
+    $ python csvtextab.py csvtest.csv -V 4pt -Ll | pdflatex
 	
 ![Example with csv containing numbers](csvtest.png)
 
@@ -17,9 +17,8 @@ Examples:
 	Patricia, mouse, 1
 
 ## csvtest2.csv
-    $ python csvtextab.py csvtest.csv -V 4pt -Ll | pdflatex
 
-
+    $ python csvtextab.py csvtest2.csv -V 5pt -Llt -a "cc||cc" | pdflatex
 
 ![Example with csv containing text](csvtest2.png)
 
